@@ -1,4 +1,7 @@
 import React from "react";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -37,19 +40,19 @@ const Footer = () => {
           <h2 className="text-lg font-bold mb-4">Social Media</h2>
           <ul className="flex justify-center space-x-4">
             <li>
-              <Facebook />
+              <FaFacebook />
               <a href="#" className="text-gray-300 hover:text-gray-900">
                 Facebook
               </a>
             </li>
             <li>
-              <Twitter />
+              <FaTwitterSquare />
               <a href="#" className="text-gray-300 hover:text-gray-900">
                 Twitter
               </a>
             </li>
             <li>
-              <Instagram />
+              <FaInstagram />
               <a href="#" className="text-gray-300 hover:text-gray-900">
                 Instagram
               </a>
