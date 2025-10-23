@@ -5,8 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-100 text-center p-4 mt-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <footer className="bg-blue-100 text-center p-8 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-8">
         <div>
           <h2 className="text-lg font-bold mb-4">About Us</h2>
           <p>
@@ -19,18 +19,18 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4">Quick Links</h2>
           <ul>
-            <li>
-              <a href="" className="hover:underline text-gray-300">
+            <li className="py-2">
+              <a href="" className="hover:underline text-zinc-900">
                 Home
               </a>
             </li>
-            <li>
-              <a href="" className="hover:underline text-gray-300">
+            <li className="py-2">
+              <a href="" className="hover:underline text-zinc-900">
                 About Us
               </a>
             </li>
-            <li>
-              <a href="" className="hover:underline text-gray-300">
+            <li className="py-2">
+              <a href="" className="hover:underline text-zinc-900">
                 Contact
               </a>
             </li>
@@ -39,21 +39,21 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4">Social Media</h2>
           <ul className="flex justify-center space-x-4">
-            <li>
+            <li className="flex-row justify-items-center items-center gap-2 hover:cursor-pointer hover:scale-110">
               <FaFacebook />
-              <a href="#" className="text-gray-300 hover:text-gray-900">
+              <a href="#" className="text-zinc-900 hover:text-zinc-700">
                 Facebook
               </a>
             </li>
-            <li>
+            <li className="flex-row justify-items-center items-center gap-2 hover:cursor-pointer hover:scale-110">
               <FaTwitterSquare />
-              <a href="#" className="text-gray-300 hover:text-gray-900">
+              <a href="#" className="text-zinc-900 hover:text-zinc-700">
                 Twitter
               </a>
             </li>
-            <li>
+            <li className="flex-row justify-items-center items-center gap-2 hover:cursor-pointer hover:scale-110">
               <FaInstagram />
-              <a href="#" className="text-gray-300 hover:text-gray-900">
+              <a href="#" className="text-zinc-900 hover:text-zinc-700">
                 Instagram
               </a>
             </li>

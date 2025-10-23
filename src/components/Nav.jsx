@@ -21,7 +21,9 @@ const Nav = () => {
     <div className="bg-white shadow-md fixed w-full z-10 mb-4">
       <nav className="px-8 bg-blue-100 shadow-md fixed w-full z-10">
         <div className="container flex justify-between items-center p-8">
-          <h1 className="text-3xl text-zinc-900 font-extrabold">ByteMALL</h1>
+          <h1 className="text-3xl text-zinc-900 font-extrabold md:mx-4.5">
+            ByteMALL
+          </h1>
 
           {/* Mobile menu */}
           <div className="md:hidden flex items-center">
@@ -34,19 +36,19 @@ const Nav = () => {
           </div>
 
           {/* Search bar */}
-          <div className="flex items-center gap-4">
+          <div className="lg:flex hidden items-center gap-4">
             <form
               onSubmit={handleSearch}
-              className="flex items-center border border-gray-300 rounded-md px-2 py-1 w-full md:w-1/3"
+              className="flex items-center border border-gray-300 rounded-md px-2 py-1 max-w-full md:w-1/3"
             >
               <input
                 type="text"
                 placeholder="Search products..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="flex-1 px-2 py-1 text-sm focus:outline-none"
+                className="flex-1 w-96 px-2 py-1 text-sm focus:outline-none"
               />
-              <button className="text-2xl hover:text-gray-500 hover:bg-amber-100 p-3 transition duration-300 mr-8 rounded-full">
+              <button className="text-2xl sm:hidden hover:text-gray-500 hover:bg-amber-100 p-3 transition duration-300 mr-8 rounded-full">
                 <CiSearch />
               </button>
             </form>
